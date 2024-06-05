@@ -3,21 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>MINI CODING PROJECT</title>
   </head>
   <body>
-    <div class="container">
-      <nav>
+    <header>
+      <nav class="nav-container">
         <section class="logo">
-          <img src="" alt="" />
+          <img src="img/logo3.png" alt="" />
         </section>
-        <ul>
-          <li>Home</li>
-          <li>Our Profile</li>
-          <li>Message Us</li>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Message Us</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
+    <hr />
+    <main>
+      <!-- section home  -->
+      <section class="section-home">
+        <header>
+          <h1>Hi <span id="nama"></span> wellcome to my website</h1>
+        </header>
+        <article>
+          <p>membuat tugas MINI CODING PROJECT dari RevoU</p>
+          <div class="banner">
+            <img src="img/banner1.jpg" alt="" class="img-slideshow" />
+            <img src="img/banner2.jpg" alt="" class="img-slideshow" />
+            <img src="img/banner3.jpg" alt="" class="img-slideshow" />
+            <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <!-- section our services -->
+      <section class="section-services">
+        <header>
+          <h1>Our Services</h1>
+        </header>
+        <article class="services-container">
+          <div class="services-img-grup">
+            <img src="img/shipping.png" alt="" class="services-img" />
+            <h4>Pengiriman</h4>
+          </div>
+          <div class="services-img-grup">
+            <img src="img/warehouse.png" alt="" class="services-img" />
+            <h4>Penyimpanan</h4>
+          </div>
+          <div class="services-img-grup">
+            <img src="img/container.png" alt="" class="services-img" />
+            <h4>Bongkar Muat</h4>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <!-- section message us -->
+      <section class="section-message">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+        <article class="message-us-container">
+          <div class="left">
+            <form class="form-container">
+              <div class="input-grup">
+                <label for="name" class="input-label">Nama:</label>
+                <input type="text" class="input-input" id="name" />
+              </div>
+              <div class="input-grup">
+                <label for="tgl-lahir" class="input-label">Tanggal Lahir</label>
+                <input type="date" class="input-input" id="tgl-lahir" />
+              </div>
+              <div class="input-grup">
+                <label for="jk" class="input-label">Jenis Kelamin</label>
+                <div class="input-input">
+                  <input
+                    type="radio"
+                    name="jk"
+                    value="laki-laki"
+                    id="jk"
+                  />Laki-Laki
+                  <input
+                    type="radio"
+                    name="jk"
+                    value="perempuan"
+                    id="jk"
+                  />Perempuan
+                </div>
+              </div>
+              <div class="input-grup">
+                <label for="pesan" class="input-label">Pesan</label>
+                <textarea
+                  name=""
+                  id="pesan"
+                  rows="5"
+                  class="input-input"
+                ></textarea>
+              </div>
+              <div class="input-grup">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="right">
+            <div class="container">
+              <div>
+                <h4>Nama:</h4>
+                <p>Harfi Novian</p>
+              </div>
+              <div>
+                <h4>Tanggal Lahir:</h4>
+                <p>1/11/1995</p>
+              </div>
+              <div>
+                <h4>Jenis Kelamin:</h4>
+                <p>Laki-Laki</p>
+              </div>
+              <div>
+                <h4>Pesan:</h4>
+                <p>lagi belajar buat website</p>
+              </div>
+            </div>
+            <div class="container">
+              <div>
+                <h4>Nama:</h4>
+                <p>Harfi Novian</p>
+              </div>
+              <div>
+                <h4>Tanggal Lahir:</h4>
+                <p>1/11/1995</p>
+              </div>
+              <div>
+                <h4>Jenis Kelamin:</h4>
+                <p>Laki-Laki</p>
+              </div>
+              <div>
+                <h4>Pesan:</h4>
+                <p>lagi belajar buat website</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Ini adalah tugas dari revou</p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

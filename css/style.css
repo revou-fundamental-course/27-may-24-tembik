@@ -1,9 +1,127 @@
 body {
-  margin: 0;
-}
-
-.container {
   width: 90%;
   margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  /* background-color: aqua; */
+}
+
+.nav-container {
   background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.banner button {
+  cursor: pointer;
+}
+
+.img-slideshow {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.services-img-grup {
+  text-align: center;
+}
+
+.services-img {
+  width: 50px;
+  height: 50px;
+}
+
+.message-us-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left {
+  width: 40%;
+}
+.input-grup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.input-grup .input-label {
+  width: 30%;
+}
+
+.input-grup .input-input {
+  width: 70%;
+  padding: 5px;
+}
+
+.input-grup button {
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+.right {
+  width: 40%;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.right .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.right .container div {
+  display: flex;
+  flex-direction: row;
+}
+
+.right .container div h4 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.right .container div p {
+  margin: 0;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: aqua;
+}
+footer p {
+  padding: 5px;
+  text-align: center;
 }
