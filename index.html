@@ -20,16 +20,16 @@
           <img src="img/logo3.png" alt="" />
         </section>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Message Us</a></li>
+          <li><a href="#link-home">Home</a></li>
+          <li><a href="#link-services">Our Services</a></li>
+          <li><a href="#link-message">Message Us</a></li>
         </ul>
       </nav>
     </header>
     <hr />
     <main>
       <!-- section home  -->
-      <section class="section-home">
+      <section class="section-home" id="link-home">
         <header>
           <h1>Hi <span id="nama"></span> wellcome to my website</h1>
         </header>
@@ -46,7 +46,7 @@
       </section>
       <hr />
       <!-- section our services -->
-      <section class="section-services">
+      <section class="section-services" id="link-services">
         <header>
           <h1>Our Services</h1>
         </header>
@@ -67,13 +67,13 @@
       </section>
       <hr />
       <!-- section message us -->
-      <section class="section-message">
+      <section class="section-message" id="link-message">
         <header>
           <h1>Message Us</h1>
         </header>
         <article class="message-us-container">
           <div class="left">
-            <form class="form-container">
+            <form class="form-container" id="form-submit">
               <div class="input-grup">
                 <label for="name" class="input-label">Nama:</label>
                 <input type="text" class="input-input" id="name" />
@@ -117,37 +117,19 @@
             <div class="container">
               <div>
                 <h4>Nama:</h4>
-                <p>Harfi Novian</p>
+                <p id="tampil-name"></p>
               </div>
               <div>
                 <h4>Tanggal Lahir:</h4>
-                <p>1/11/1995</p>
+                <p id="tampil-tgl-lahir"></p>
               </div>
               <div>
                 <h4>Jenis Kelamin:</h4>
-                <p>Laki-Laki</p>
+                <p id="tampil-jk"></p>
               </div>
               <div>
                 <h4>Pesan:</h4>
-                <p>lagi belajar buat website</p>
-              </div>
-            </div>
-            <div class="container">
-              <div>
-                <h4>Nama:</h4>
-                <p>Harfi Novian</p>
-              </div>
-              <div>
-                <h4>Tanggal Lahir:</h4>
-                <p>1/11/1995</p>
-              </div>
-              <div>
-                <h4>Jenis Kelamin:</h4>
-                <p>Laki-Laki</p>
-              </div>
-              <div>
-                <h4>Pesan:</h4>
-                <p>lagi belajar buat website</p>
+                <p id="tampil-pesan"></p>
               </div>
             </div>
           </div>

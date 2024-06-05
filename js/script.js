@@ -13,7 +13,7 @@ function showDivs(n) {
   } else if (n < 1) {
     slideIndex = imgList.length;
   }
-  // console.log(slideIndex);
+
   for (i = 0; i < imgList.length; i++) {
     imgList[i].style.display = "none";
   }
@@ -31,4 +31,29 @@ function perkenalan() {
 
 // perkenalan();
 
-document.getElementById("name")
+const formSubmit = document.getElementById("form-submit");
+formSubmit.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const tglLahir = document.getElementById("tgl-lahir").value;
+  const jk = document.querySelector('input[name="jk"]:checked').value;
+  const pesan = document.getElementById("pesan").value;
+
+  if (
+    name == null ||
+    name == "" ||
+    tglLahir == null ||
+    tglLahir == "" ||
+    jk == null ||
+    jk == "" ||
+    pesan == null ||
+    pesan == ""
+  ) {
+    alert("field tidak boleh kosong");
+  } else {
+    document.getElementById("tampil-name").innerHTML = name;
+    document.getElementById("tampil-tgl-lahir").innerHTML = tglLahir;
+    document.getElementById("tampil-jk").innerHTML = jk;
+    document.getElementById("tampil-pesan").innerHTML = pesan;
+  }
+});
