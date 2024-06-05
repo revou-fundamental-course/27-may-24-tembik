@@ -29,14 +29,14 @@ function perkenalan() {
   document.getElementById("nama").innerHTML = namaAnda;
 }
 
-// perkenalan();
+perkenalan();
 
 const formSubmit = document.getElementById("form-submit");
 formSubmit.addEventListener("submit", function (e) {
   e.preventDefault();
   const name = document.getElementById("name").value;
   const tglLahir = document.getElementById("tgl-lahir").value;
-  const jk = document.querySelector('input[name="jk"]:checked').value;
+  const jk = document.getElementById("jk").value;
   const pesan = document.getElementById("pesan").value;
 
   if (

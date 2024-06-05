@@ -121,7 +121,52 @@ body {
 footer {
   background-color: aqua;
 }
+
 footer p {
   padding: 5px;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin-bottom: 20px;
+  }
+
+  .section-services header h1 {
+    text-align: center;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .section-message header h1 {
+    text-align: center;
+  }
+
+  .message-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    width: 90%;
+  }
+
+  .right {
+    width: 90%;
+  }
 }
